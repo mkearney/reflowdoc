@@ -1,0 +1,4 @@
+Name: Reflow Document
+Description: Reindent to 80 width text in R Markdown output.
+Binding: reflow_doc
+Interactive: true
