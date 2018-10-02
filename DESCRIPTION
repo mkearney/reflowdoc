@@ -1,5 +1,5 @@
 Package: reflowdoc
-Title: pkg
+Title: Hard-Wrapping Rstudio Add-In
 Version: 0.0.1
 Authors@R: 
     person(given = "Michael W.",
@@ -7,7 +7,8 @@ Authors@R:
            role = c("aut", "cre"),
            email = "kearneymw@missouri.edu",
            comment = c(ORCID = "0000-0002-0730-4694"))
-Description: Describe pkg
+Description: An Rstudio add-in for hard wrapping non-code chunk text areas in 
+    Rmarkdown documents to a margin/width of 80.
 License: GPL-3
 Encoding: UTF-8
 Langauge: en
