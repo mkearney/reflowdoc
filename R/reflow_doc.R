@@ -19,6 +19,9 @@ reflow_doc <- function(cast_from = ".") {
   d <- tfse::readlines(doc)
   et <- d[1:grep("^---", d)[2]]
   d <- d[-c(1:grep("^---", d)[2])]
+  while (grepl("^$", d[1])) {
+  	d <- d[-1]
+  }
   x <- paste(d, collapse = "\n")
   x <- strsplit(x, "```")[[1]]
   chs <- grep("^\\{", x)
@@ -29,7 +32,6 @@ reflow_doc <- function(cast_from = ".") {
   		0 else
   			chs[i - 1]
 
-  	##x[(1:length(x) > st) & (1:length(x) < chs[i])]
   	txt[length(txt) + 1] <- paste0(c(reflow(
   		x[(1:length(x) > st) & (1:length(x) < chs[i])]), x[chs[i]]),
   		collapse = "")
@@ -49,16 +51,4 @@ reflow <- function(x) {
 	x <- paste(x, collapse = "\n")
 	x <- lapply(strsplit(x, "\n\n+")[[1]], stringr::str_wrap)
 	paste0(c("", x, ""), collapse = "\n\n")
-}
-
-make_pkg <- function(path) {
-  path <- normalizePath(path, mustWork = FALSE)
-  owd <- getwd()
-  usethis::create_package(path)
-  setwd(path)
-  usethis::use_rstudio()
-  usethis::use_package("rstudioapi")
-  file.copy("~/Desktop/test.R", "R/reflow_doc.R")
-  system("open -a rstudio ", path)
-  on.exit(setwd(owd), add = TRUE)
 }
