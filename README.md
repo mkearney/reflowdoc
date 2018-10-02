@@ -25,7 +25,7 @@ To reflow your current \[active\] document, click the `Addins v`
 dropdown in Rstudio and select `Reflow Document` (you may need to
 restart Rstudio after install for this to appear).
 
-<p style="text-align:center">
+<p style="align:center">
 
 <img src="tools/readme/addin.png">
 
