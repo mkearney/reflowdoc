@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# reflowdoc <img align="right" width="200px" src="man/figures/logo.png">
+# reflowdoc <img align="right" width="200" src="man/figures/logo.png">
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
@@ -25,7 +25,7 @@ To reflow your current \[active\] document, click the `Addins v`
 dropdown in Rstudio and select `Reflow Document` (you may need to
 restart Rstudio after install for this to appear).
 
-<p style="align:center">
+<p style="align=center">
 
 <img src="tools/readme/addin.png">
 
