@@ -5,7 +5,7 @@ output: github_document
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>", out.width = "100%")
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 # reflowdoc <img align="right" width="200" src="man/figures/logo.png">
 
@@ -29,11 +29,9 @@ To reflow your current [active] document, click the `Addins v` dropdown in
 Rstudio and select `Reflow Document` (you may need to restart Rstudio after 
 install for this to appear).
 
-<p style="align:center"> 
-  <img src="tools/readme/addin.png"> 
-</p>
+
+<p style='align:center'><img src='tools/readme/addin.png' max-width="600px" /></p>
 
 
-<p style="align:center"> 
-  <img src="tools/readme/vid.gif"> 
-</p>
+<p style='align:center'><img src='tools/readme/vid.gif' max-width="600px" /></p>
+
