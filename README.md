@@ -27,12 +27,12 @@ restart Rstudio after install for this to appear).
 
 <p style="align:center">
 
-<img src="tools/readme/addin.png">
+<img src="tools/readme/addin.png" />
 
 </p>
 
 <p style="align:center">
 
-<img src="tools/readme/vid.gif">
+<img src="tools/readme/vid.gif" />
 
 </p>
